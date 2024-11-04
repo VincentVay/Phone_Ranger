@@ -1,0 +1,502 @@
+/* Main page body styles */
+html{
+  height: 1600px;
+  margin: 0;
+  padding: 0;
+  width: auto;
+ 
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    transition: background-color 0.6s ease;
+  }
+ 
+  p{
+    color: #ccc;
+    font-size: 20px;
+  }
+ 
+ 
+  h3{
+    color: #ccc;
+  }
+ 
+.headcontainer{ /* header section */
+  color: aqua;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  height: 100px;
+  font-size: xx-large;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.logo{
+  width: 1300px;
+  height: 222px;
+  margin-right: 20px;
+  margin-top: 100px;
+  position: absolute;
+  display: flex;
+}
+ 
+ 
+ 
+/* Container for the line */
+.line-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1000px;
+  height: 100vh;
+}
+ 
+/* The animated line */
+.colour-line {
+  width: 100vw;
+  height: 5px;
+  background: linear-gradient(350deg, red, red, red, red, red, red, red, red,red,red, red, red, red, red, red, red, orange, orange, orange, orange,orange, orange, orange, orange, yellow,yellow,yellow,yellow,yellow, yellow,yellow, green, green,green, green, green, green,green, green, green, blue, blue, blue, blue, blue, blue, indigo, indigo, indigo,  indigo, indigo, indigo, indigo,  indigo, violet, violet, violet, violet, violet, violet, violet, red, red, red, red,red,red, red, red, red, red, red, red, red,red,red, red, red, red, red, red, red, red,red,red, red, red, red, red, red, red, red, red,red, red, red, red, red, red, red, red,red,red, red, red, red, red, red, red, red, red,red, red, red, red, red, red, red, red,red,red, red, red, red, red, red, red, red, red,red, red, red, red, red, red, red, red,red,red, red, red, red, red, red, red, red  );
+  background-size: 200%; /* to enable smooth transition of the colors */
+  animation: colorAnimation 5s linear infinite; /* loop animation */
+  border-radius: 5px; /* rounded edges */
+}
+ 
+/* Animation to create a fading color effect */
+@keyframes colorAnimation {
+  0% {
+      background-position: 0%;
+  }
+  100% {
+      background-position: 180%;
+  }
+}
+ 
+ 
+ 
+.midcontainer{ /* About Us section */
+  background-color: #f0f0f0;
+  color: black;
+  display: flex;
+  position: absolute;
+  margin-top: 2150px;
+  height: 380px;
+  width: 100vw;
+  font-size: xx-large;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+ 
+.lowmidcontainer{ /* Contact us section */
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 300px;
+  margin-top: 2850px;
+  font-size: xx-large;
+  justify-content: center;
+  align-items: center;
+}
+ 
+  a {
+    text-decoration: none;
+    color: white;
+  }
+ 
+  .btn {
+    display: flex;
+    border-top-left-radius: 30%;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 32%;
+    border-bottom-left-radius: 32%;
+    border-bottom-right-radius: 32%;
+  }
+ 
+ 
+  /* Phone Container */
+  .phones-container {
+    display: flex;
+    position: absolute;
+    margin-top: 1040px;
+    width: 100%;
+    justify-content: center;
+    gap: 250px;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+  }
+ 
+  .google{ /* Google phone */
+    width: 325px;
+    height: 410px;
+  }
+ 
+  .samsung{ /* Samsung phone */
+    width: 260px;
+    height: 450px;
+  }
+ 
+  .iPhone{ /* apple phone */
+    width: 305px;
+    height: 470px;
+    left: 5%;
+  }
+ 
+  /* Phone position and shape/layout and shadows */
+  .phone1 {  /* Google phone */
+    width: 225px;
+    height: 410px;
+    background-color: #333;
+    border-radius: 50px;
+    box-shadow: 0px 10px 18px 1px rgb(255, 255, 255);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+    cursor: pointer;
+  }
+ 
+  .phone2 { /* Samsung phone */
+    width: 225px;
+    height: 425px;
+    background-color: #333;
+    box-shadow: -2.9px 9px 18px 0px rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+    cursor: pointer;
+  }
+ 
+  .phone3 { /* apple phone */
+    width: 235px;
+    height: 436px;
+    background-color: #333;
+    border-radius: 50px;
+    box-shadow: 0px 2px 20px rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom:10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+    cursor: pointer;
+  }
+ 
+   /* Phone Shadows */
+  .phone1:hover {
+    transform: translateY(-15px);
+    box-shadow: 1px 12px 18px 10px rgb(255, 0, 0);
+  }
+ 
+  .phone2:hover {
+    transform: translateY(-15px);
+    /* left to right prder on shadow hover,
+    shadow shift to the left ,shadow shift at bottom, overall opacity/ transparancy dense size, overall shape size*/
+    box-shadow: -2px 15px 20px 8px rgb(0, 255, 17);
+ 
+  }
+ 
+  .phone3:hover {
+    transform: translateY(-10px);
+    box-shadow: 2px 15px 20px 13px #8f53ff;
+  }
+ 
+  .miniscreen {
+    width: 85%;
+    height: 85%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+ 
+  /* Hide other phones when one is targeted */
+  #page1:target ~ .phones-container .phone1:not(#phone1),
+  #page2:target ~ .phones-container .phone2:not(#phone2),
+  #page3:target ~ .phones-container .phone3:not(#phone3) {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+  }
+ 
+  /* Zoom-in effect for the targeted phone */
+  #page1:target ~ .phones-container #phone1,
+  #page2:target ~ .phones-container #phone2,
+  #page3:target ~ .phones-container #phone3 {
+    transform: scale(2.5);
+    z-index: 1;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+  }
+ 
+  /* Page style */
+ 
+  .googlecontainer{  /* outerbox controlling the center of the content */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #ad0101, #680202e2, #000000);
+    transition: background-color 0.6s ease;
+  }
+ 
+  .samsungcontainer{  /* outerbox controlling the center of the content */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #005114, #00ab47a5, #000000);
+    transition: background-color 0.6s ease;
+  }
+ 
+  .iphonecontainer{  /* outerbox controlling the center of the content */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #2a016d, #3800a0, #000000);
+    transition: background-color 0.6s ease;
+  }
+ 
+ 
+  .innercontainer{ /* innerbox controlling the center of the layout */
+    background-color: #ccc;
+    height: 402px;
+    width: 690px;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+ 
+ 
+  }
+ 
+  .page1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -50%) scale(0); /* starting position of zoom effect in this case,  this is in the middle */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s ease;
+    z-index: 999; /* An element with a higher z-index value will appear in front of an element with a lower z-index value. */
+    overflow: hidden;
+  }
+ 
+  .page1btn{
+    position: fixed;
+    display: flex;
+    width: auto;
+    height: 90px;
+    margin-top: 650px;
+    margin-left: 1830px;
+    align-items: center;
+    font-size: 40px;
+  }
+ 
+ 
+  .page2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* starting position of zoom effect in this case,  this is in the middle */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s ease;
+    z-index: 999; /* An element with a higher z-index value will appear in front of an element with a lower z-index value. */
+    overflow: hidden;
+  }
+ 
+  .page2btn{
+    position: fixed;
+    display: flex;
+    width: auto;
+    height: 90px;
+    margin-top: 650px;
+    margin-left: 1830px;
+    align-items: center;
+    font-size: 40px;
+  }
+ 
+ 
+  .page3 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -20%) scale(0); /* starting position of zoom effect in this case,  this is in the middle */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s ease;
+    z-index: 999; /* An element with a higher z-index value will appear in front of an element with a lower z-index value. */
+    overflow: hidden;
+  }
+ 
+  .page3btn{
+    position: fixed;
+    display: flex;
+    width: auto;
+    height: 90px;
+    margin-top: 650px;
+    margin-left: 1830px;
+    align-items: center;
+    font-size: 40px;
+  }
+ 
+ 
+ 
+  /* When the page is targeted */
+  .page1:target {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 1;
+    background: linear-gradient(to top,#270000, #000000);
+  }
+ 
+  .page2:target {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 1;
+    background: linear-gradient(to top,#001a01, #000000);
+  }
+ 
+  .page3:target {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 1;
+    background: linear-gradient(to top,#1f001e, #000000);
+  }
+ 
+ 
+ 
+ 
+/* ---------------- Phone animation scene ------------------ */
+/* the container position of the phone animation scene */
+  .scene {
+    position: fixed;
+    margin-right: 1700px;
+    width: 230px;
+    height: 400px;
+    perspective: 1000px;
+    cursor: pointer;
+    display: inline-block;
+    justify-content: center;
+    align-items: baseline;
+    padding-left: 25px;
+  }
+ 
+  /* Phone Structure */
+ 
+  .phone {
+    position: relative;
+    width: 200px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: transform 0.9s ease-in-out;
+ 
+  }
+ 
+  /* Phone Parts */
+  .screen, .frame, .button {
+    position: absolute;
+    transition: transform 0.8s ease-in-out;
+  }
+ 
+  .screen {
+    width: 280px;
+    height: 460px;
+    background-color: black;
+    background-image: ;
+    top: 10px;
+    left: 10px;
+    border-radius: 20px;
+    transform: translateZ(9px);
+  }
+ 
+  .frame {
+    width: 300px;
+    height: 500px;
+    background-color: #ccc;
+    border-radius: 30px;
+    transform: translateZ(0);
+  }
+ 
+ 
+  /* Default state - Assembled */
+  #toggle:checked + .scene .phone .screen {
+    transform: translateZ(80px);
+  }
+ 
+  #toggle:checked + .scene .phone .frame {
+    transform: translateZ(-10px);
+  }
+ 
+  #toggle:checked + .scene .phone .button {
+    transform: translateX(-80%) translateZ(250px);
+  }
+ 
+  /* Add rotation on hover for a 3D effect */
+  .scene:hover .phone {
+    transform: rotateY(33deg);
+  }
+ 
+/* Specs Section */
+.specs {
+  display: flex;
+  position: fixed;
+  margin-left: 380px;
+  justify-content: center;
+  gap: 60px;
+}
+ 
+.spec {
+  text-align: center;
+}
+ 
+.spec img {
+  width: auto;
+  height: 64px;
+  margin-bottom: 10px;
+}
+ 
+.image-and-specs {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  gap: 80px;              
+}
